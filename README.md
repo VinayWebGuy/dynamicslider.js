@@ -4,7 +4,7 @@ This is a dynamic slider created with javascript where you can customize the des
 
 ## How to use
 1. Add the **ds_config.js** and **ds_script.js** file in your project *(in same order as written)*.
-2. Add the latest jquery cdn.
+2. Add the latest jquery cdn before the js files.
 3. Add the css file and font-awesome cdn.
 4. Add this few lines of code to implement the functionality.
   ``` 
