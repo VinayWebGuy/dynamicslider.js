@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr: #000;
+    --clrLow: #00000070;
+}
+body {
+    font-family: 'Poppins';
+    position: relative;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 50px;
+}
+.banner {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     inset: 0;
+    opacity: 0;
+    transform: opacity 0.4s;
+}
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.banner.active {
+    opacity: 1;
+    z-index: 2;
+}
+.fa.banner-arrow{
+    position: absolute;
+    z-index: 3;
+    font-size: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+.fa.banner-arrow.show {
+    display: block;
+}
+.banner-arrow.fa-arrow-left {
+    left: 40px;
+}
+.banner-arrow.fa-arrow-right {
+    right : 40px;
+}
+.slider-dots {
+    position: absolute;
+    z-index: 3;
+    bottom: 15px;
+    left: 50%;
+    transform : translateX(-50%);
+    display: flex;
+    gap: 15px;
+    display: none;
+}
+.slider-dots.show {
+    display: flex;
+}
+.slider-dots .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.slider-dots .dot.active {
+    opacity: 1;
+}
+.banner-content {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-button {
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+}
